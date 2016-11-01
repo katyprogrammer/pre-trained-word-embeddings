@@ -173,7 +173,7 @@ model.fit(x_train, y_train, validation_data=(x_val, y_val),
 
 output_file_name = 'NB_EPOCH_{}_BATCH_SIZE_{}_MAX_SEQUENCE_LENGTH_{}_MAX_NB_WORDS_{}_EMBEDDING_DIM_{}.txt'.format(NB_EPOCH, BATCH_SIZE, MAX_SEQUENCE_LENGTH, MAX_NB_WORDS, EMBEDDING_DIM)
 
-if os.path.exists(OUTPUT_DIR):
+if !os.path.exists(OUTPUT_DIR):
     os.makedirs(OUTPUT_DIR)
 
 f = open(os.path.join(OUTPUT_DIR, output_file_name), 'w')
